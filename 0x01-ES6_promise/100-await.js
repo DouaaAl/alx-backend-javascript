@@ -5,7 +5,7 @@ export default async function asyncUploadUser() {
   const userResult = await createUser();
 
   return {
-    photo: photoResult.status == 200 ? photoResult : null,
-    user: userResult.firstName ? userResult : null,
+    photo: photoResult?.status === 200 ? photoResult : null,
+    user: userResult?.firstName ? userResult : null,
   };
 }
