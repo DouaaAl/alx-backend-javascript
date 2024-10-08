@@ -4,6 +4,6 @@ export default function hasValuesFromArray(set, array) {
     if (!set.has(item)) {
       exist = false;
     }
-  })
+  });
   return exist;
 }
